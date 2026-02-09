@@ -3,7 +3,7 @@
 Prune unused native prebuilds from your packaged Electron app.
 
 ```
-npm i electron-forge-plugin-prune-prebuilds
+npm i -D electron-forge-plugin-prune-prebuilds
 ```
 
 ## Usage
