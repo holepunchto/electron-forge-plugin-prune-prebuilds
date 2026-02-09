@@ -1,4 +1,4 @@
-# require-addon
+# electron-forge-plugin-prune-prebuilds
 
 Prune unused native prebuilds from your packaged Electron app.
 
