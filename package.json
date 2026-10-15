@@ -10,8 +10,8 @@
     "index.js"
   ],
   "scripts": {
-    "lint": "prettier --check .",
-    "format": "prettier --write ."
+    "format": "prettier --write . && lunte --fix",
+    "lint": "prettier --check . && lunte"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,7 @@
     "@electron-forge/plugin-base": "^7.11.1"
   },
   "devDependencies": {
+    "lunte": "^1.8.6",
     "prettier": "^3.6.2",
     "prettier-config-holepunch": "^2.0.0"
   }
