@@ -10,8 +10,7 @@ module.exports = class PrunePrebuilds extends PluginBase {
   }
 
   async packageAfterPrune(config, buildPath, electronVersion, platform, arch) {
-    const prebuildPlatform = platform === 'mas' ? 'darwin' : platform
-    await prunePrebuilds(buildPath, prebuildPlatform, arch)
+    await prunePrebuilds(buildPath, platform === 'mas' ? 'darwin' : platform, arch)
   }
 }
 
