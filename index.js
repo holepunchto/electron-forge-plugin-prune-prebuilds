@@ -16,7 +16,13 @@ module.exports = class PrunePrebuilds extends PluginBase {
 
 async function prunePrebuilds(base, platform, arch) {
   for await (const entry of opendir(path.join(base, 'prebuilds'))) {
-    if (entry.name === platform + '-' + arch || entry.name.endsWith('-universal')) continue
+    if (
+      entry.name === platform + '-' + arch ||
+      entry.name.endsWith('-universal') ||
+      entry.name === 'wasi-wasm32'
+    ) {
+      continue
+    }
 
     await fs.rm(path.join(entry.parentPath, entry.name), { recursive: true })
   }
