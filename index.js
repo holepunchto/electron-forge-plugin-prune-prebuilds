@@ -1,8 +1,8 @@
-const fs = require('fs/promises')
-const path = require('path')
-const { default: PluginBase } = require('@electron-forge/plugin-base')
+import fs from 'fs/promises'
+import path from 'path'
+import PluginBase from '@electron-forge/plugin-base'
 
-module.exports = class PrunePrebuilds extends PluginBase {
+export default class PrunePrebuilds extends PluginBase {
   getHooks() {
     return {
       packageAfterPrune: [this.packageAfterPrune]
