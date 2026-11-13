@@ -23,8 +23,12 @@
     "url": "https://github.com/holepunchto/electron-forge-plugin-prune-prebuilds/issues"
   },
   "homepage": "https://github.com/holepunchto/electron-forge-plugin-prune-prebuilds#readme",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
   "dependencies": {
-    "@electron-forge/plugin-base": "^7.11.1"
+    "@electron-forge/plugin-base": "^8.0.1"
   },
   "devDependencies": {
     "lunte": "^1.8.6",
