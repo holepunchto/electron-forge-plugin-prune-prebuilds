@@ -1,6 +1,6 @@
 {
   "name": "electron-forge-plugin-prune-prebuilds",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "description": "Prune unused native prebuilds from your packaged Electron app",
   "exports": {
     "./package": "./package.json",
